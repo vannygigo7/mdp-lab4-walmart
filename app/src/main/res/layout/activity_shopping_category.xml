@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome test@gmail.com"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,89 +34,14 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/gridLayout"
+        android:id="@+id/gridCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="2"
-        android:padding="30dp"
+        android:layout_margin="20dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle">
-
-        <LinearLayout
-            android:id="@+id/linear1"
-            android:orientation="vertical"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            >
-
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/electronic" />
-            <TextView
-                android:id="@+id/tv1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Electronic"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear2"
-            android:orientation="vertical"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            >
-
-            <ImageView
-                android:id="@+id/img2"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/clothing" />
-            <TextView
-                android:id="@+id/tv2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Clothing"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear3"
-            android:orientation="vertical"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            >
-            <ImageView
-                android:id="@+id/img3"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/cosmetic" />
-            <TextView
-                android:id="@+id/tv3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cosmetic"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear4"
-            android:orientation="vertical"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            >
-            <ImageView
-                android:id="@+id/img4"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/food" />
-            <TextView
-                android:id="@+id/tv4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Food"/>
-        </LinearLayout>
-
-
     </GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

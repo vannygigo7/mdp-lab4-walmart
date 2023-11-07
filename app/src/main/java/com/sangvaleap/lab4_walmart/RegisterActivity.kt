@@ -22,11 +22,11 @@ class RegisterActivity : AppCompatActivity() {
             if(!validateForm(user)){
                 Toast.makeText(this, "Please fill all required fields", Toast.LENGTH_LONG).show()
             }else{
-                var intent = Intent(this, ShoppingCategoryActivity::class.java)
+                Toast.makeText(this, "Account created successfully", Toast.LENGTH_SHORT).show()
+                var intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("user", user)
                 startActivity(intent)
             }
-            println(user)
         }
     }
 
